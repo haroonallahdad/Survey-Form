@@ -1,0 +1,210 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Haroon's Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Haroon's Survey Form</h1>
+  <p id="description">Thank you for taking the time to fill in my form</p>
+  
+  <!-- Survey Form -->
+  <form id="survey-form">
+      
+      <label id="name-label" for="name"> Name <input id="name" name="Name" type="text" placeholder="Enter you name here" required /></label>
+
+      <label id="email-label" for="email"> Email <input id="email" name="Email" type="email" placeholder="Enter you email here" required /></label>
+      
+      <label id="number-label" for="number"> Age <span class="span_small"> (optional)</span> <input id="number" name="Age" type="number" min="16" max="150" placeholder="Age" /></label>
+      
+      <!-- DropDown -->
+      <label for="dropdown">Religion:
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option>Muslim</option>
+          <option>Christian</option>
+          <option>Jew</option>
+          <option>Hindu</option>
+          <option>Buddist</option>
+          <option>Sikh</option>
+        </select>
+      </label>
+
+      <!-- Radio Buttons -->
+      <label>Would you like to recieve a preaching about Islam?
+        <br/><input type="radio" name="preaching" value="Radio_yes"class="preaching_style1">yes
+        <br><input type="radio" name="preaching" value="Radio_no" class="preaching_style2">no
+        <br><input type="radio" name="preaching" value="Radio_maybe" class="preaching_style3">maybe
+      </label>
+      <br/><br/>
+      
+      <!-- CheckBoxes -->
+      <label>What is your professional field? <span class="additional_info">(Check all that apply)</span><br/><br/>
+      <input type="checkbox" id="checkbox" value="Database_dev"><label class="inline_lbl">DataBase Developer</label>
+<br/>
+            <input type="checkbox" value="Wordpress_Dev" id="checkbox"><label class="inline_lbl" >WordPress Developer</label>
+
+              <input type="checkbox" value="Web_Dev" id="checkbox"><label class="inline_lbl" >Web Developer</label>
+<br/>
+
+                  <input type="checkbox" value="Graphic_Des" id="checkbox"><label class="inline_lbl" value="Graphic_Des">Graphic Designer</label>
+<br/>
+
+                  <input type="checkbox" value="Application_Dev" id="checkbox"><label class="inline_lbl" >Application Developer</label>
+<br/><br/><br/>
+
+
+<!--submit-->
+<label>Any comments or suggestions? <textarea></textarea></label>
+<label><input id="submit" type="submit"></label>
+  </form>
+
+</body>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  min-height: 100vh;
+  max-height: 300vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  color: #f5f6f7;
+}
+
+#title {
+  font-family: Helvetica;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: -1.5;
+  font-size: 38;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: -1.5em;
+}
+
+#survey-form {
+  padding-top: -20px;
+  width: 60vw;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 22%;
+  margin-left: 22%;
+  padding-bottom: 2em;
+  background-color: rgba(93, 93, 162, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  color: #f7f8f9;
+  font-size: 18px; 
+}
+
+input, select {
+  font-family: Arial, sans-serif;
+  color: #676c70;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.span_small {
+  font-size: 14px;
+}
+
+.preaching_style1 {
+  display: inline;
+  margin-bottom: 14;
+  margin-top: 14;
+  width: 13;
+}
+
+.preaching_style2 {
+  display: inline;
+  margin-bottom: 14;
+  margin-top: 0;
+  width: 13;
+}
+
+.preaching_style3 {
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 13;
+}
+
+.additional_info {
+  font-size: 13px;
+  display: inline;
+}
+
+.inline_lbl {
+  display: inline-block;
+  margin: 0;
+  margin-left: 0px;
+  width: 96%;
+}
+
+#checkbox {
+  display: inline-block;
+  margin: 0;
+  width: 4%;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 6px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  margin-bottom: 25px;
+  min-height: 80px;
+}
+
+#submit {
+  background-color: #348534;
+  color: #f6f7f8;
+  cursor: pointer;
+}
+
+textarea {
+  color: #000000;
+}
+
+** end of undefined **
+
